@@ -8,10 +8,10 @@ dotenv.config();
 
 const app = express();
 
-// ✅ CORS configuration to allow both local and deployed frontend
+// ✅ CORS configuration with correct frontend URLs
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://moviemate-frontend.vercel.app'
+  'https://moviemate-murex.vercel.app' // ← updated to your actual deployed frontend
 ];
 
 app.use(cors({
